@@ -23,3 +23,11 @@
 //Devo restituire un valore?
 // Se sì, di che tipo?
 let parola = prompt("inserisci la parola");
+function isPalindrome(parola) {
+  let invertedWord = parola.split("").reverse("").join("");
+  if (parola === invertedWord) {
+    return true;
+  } else {
+    return false;
+  }
+}

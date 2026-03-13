@@ -31,3 +31,10 @@ function isPalindrome(parola) {
     return false;
   }
 }
+let result = isPalindrome(parola);
+
+if  result) {
+  console.log("La parola è palindroma");
+} else {
+  console.log("la parola NON è palindroma");
+}

@@ -22,3 +22,4 @@
 //Ho bisogno di parametri?
 //Devo restituire un valore?
 // Se sì, di che tipo?
+let parola = prompt("inserisci la parola");

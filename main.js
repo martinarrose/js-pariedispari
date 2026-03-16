@@ -43,3 +43,11 @@ if (result) {
 
 //pari e dispari
 const sceltaUtente = prompt("scegli pari o dispari");
+const numeroUtente = parseInt(prompt("scegli un mumero da 1 a 5"));
+
+if (numeroUtente > 5) {
+  alert("segli un numero inferiore a 5!");
+}
+console.log(numeroUtente);
+
+const numeroRandom = Math.floor(math.random() * 5) + 1;

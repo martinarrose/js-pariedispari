@@ -22,6 +22,8 @@
 //Ho bisogno di parametri?
 //Devo restituire un valore?
 // Se sì, di che tipo?
+
+//Parola palindroma
 let parola = prompt("inserisci la parola");
 function isPalindrome(parola) {
   let invertedWord = parola.split("").reverse("").join("");
@@ -33,8 +35,11 @@ function isPalindrome(parola) {
 }
 let result = isPalindrome(parola);
 
-if  result) {
+if (result) {
   console.log("La parola è palindroma");
 } else {
   console.log("la parola NON è palindroma");
 }
+
+//pari e dispari
+const sceltaUtente = prompt("scegli pari o dispari");

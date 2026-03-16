@@ -43,11 +43,27 @@ if (result) {
 
 //pari e dispari
 const sceltaUtente = prompt("scegli pari o dispari");
-const numeroUtente = parseInt(prompt("scegli un mumero da 1 a 5"));
+let numeroUtente = null;
+do {
+  numeroUtente = parseInt(prompt("scegli un mumero da 1 a 5"));
+} while (numeroUtente > 5);
 
-if (numeroUtente > 5) {
-  alert("segli un numero inferiore a 5!");
+const numeroRandom = Math.floor(Math.random() * 5) + 1;
+console.log(numeroRandom);
+const somma = numeroUtente + numeroRandom;
+console.log(somma);
+function pariODispari(numero) {
+  if (numero % 2 === 0) {
+    return "pari";
+  } else {
+    return "dispari";
+  }
 }
-console.log(numeroUtente);
+console.log(pariODispari(somma));
+let risultato = pariODispari(somma);
 
-const numeroRandom = Math.floor(math.random() * 5) + 1;
+if (risultato === sceltaUtente) {
+  console.log("Hsi vinto!!");
+} else {
+  console.log("Hai perso!!");
+}
